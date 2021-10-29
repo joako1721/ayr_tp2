@@ -6,6 +6,7 @@
 sudo wg-quick up wg0
 sudo ufw allow from 10.0.0.255
 sudo ufw allow 40000/udp
+sudo ufw allow 8080/udp
 sudo ufw enable
 clear
 sleep 5
