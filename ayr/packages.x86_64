@@ -1,0 +1,13 @@
+base
+cloud-init
+linux
+mkinitcpio
+mkinitcpio-archiso
+wireguard-tools
+openssh
+ufw
+pv
+qemu-guest-agent
+syslinux
+virtualbox-guest-utils-nox
+vim

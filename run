@@ -1,0 +1,2 @@
+#!/bin/bash
+exec run_archiso -i out/*.iso
