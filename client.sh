@@ -11,11 +11,11 @@ client_privkey="CBKSv3VjmP/trhkA6hRdWIXRtJqgB/y+gj94VN2EuVg="
 echo $client_privkey > private
 
 ip link add dev wg0 type wireguard
-ip address add 10.0.0.1/24 dev wg0
+ip address add 10.0.0.254/24 dev wg0
 wg set wg0 private-key ./private
 ip link set up dev wg0
 
-wg set wg0 peer $server_pubkey allowed-ips $server_vpn_ip endpoint "$server_public_ip:40000"
+wg set wg0 peer $server_pubkey allowed-ips $server_vpn_ip endpoint "$server_public_ip":40000
 
 # Claves server (VM):
 #
